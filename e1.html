@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Need Blood</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="odometer-theme-car.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .odo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+    </style>
+    <style>
+        .zoom:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+    </style>
+
+</head>
+
+<body style="background: linear-gradient(to top left, #ff6666 0%, #5f0d7a 100%);">
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="image/1.png" alt="1" title="1" width="130px">
+
+
+
+
+                <button type="submit" id="myBtn"
+                    style="background-color: black;color: rgb(173, 169, 169);height: 40px;border: none;">
+                    <i class="glyphicon glyphicon-search"></i></button>
+
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+
+
+                            <button type="submit"
+                                style="background-color: white;width: 4%;height: 45px;border-radius: 40%;border: none;">
+                                <i class="glyphicon glyphicon-search" style="background-color: white;"></i></button>
+                            <input type="text" placeholder="Search..." name="search2">
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index1.html">Home</a></li>
+
+                    <li><a href="register1.html">Register</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Who Can?<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="a1.html">One Donation help Three</a></li>
+                            <li><a href="b1.html">Post Donation</a></li>
+                            <li><a href="c1.html">Blood Compatiblity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="d1.html">Why Donate Blood?</a></li>
+                    <li><a href="e1.html">Who Need Blood?</a></li>
+                    <li><a href="tips1.html">Tips on Donating</a></li>
+                    <li><a href="contact1.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row" style="margin-top: 10%;padding-left: 5%;padding-right: 5%;margin-bottom: 20%;">
+        <h2 style="text-align: center;">Who needs blood?</h2><hr>
+        <p>Under normal circumstances, every two seconds someone needs a blood transfusion. Blood transfusions are used
+            for trauma victims - due to accidents and burns - heart surgery, organ transplants, women with complications
+            during childbirth, newborns and premature babies, and patients receiving treatment for leukemia, cancer or
+            other diseases, such as sickle cell disease and thalassemia.</p>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: rgb(0, 0, 0);">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-sm-12">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase"><i class="fa fa-heart"></i> About</h5>
+                    <p> OBBG is equally committed to social causes, from helping save lives to saving the
+                        environment.
+                        Online Blood Bank Of Gujarat is an online, social, non-profit initiative of Consim to serve
+                        our
+                        community. We started this mission with one idea in mind – connecting people with heart with
+                        those who need life.</p>
+
+                </div>
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <hr>
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-sm-6" style="text-align: center;margin-bottom: 0.5%;;">
+
+                <a href="https://www.facebook.com/">
+                    <img src="image/facebook.png" alt="facebook" style="width: 5%"></a>
+
+                <a href="https://aboutme.google.com/u/0/?referer=gplus">
+                    <img src="image/google.png" alt="google" style="width: 5%"></a>
+
+                <a href="https://www.instagram.com/accounts/login/?hl=en">
+                    <img src="image/instagram.png" alt="instagram" style="width: 5%"></a>
+
+                <a href="https://twitter.com/login">
+                    <img src="image/twitter.png" alt="twitter" style="width: 5%"></a>
+
+                <a href="https://www.linkedin.com/login">
+                    <img src="image/in.png" alt="in" style="width: 5%"></a>
+
+            </div>
+            <div class="col-sm-6" style="text-align: center;margin-bottom: 0.5%;">
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> bloodbank.github.io</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+</body>
+
+</html>
